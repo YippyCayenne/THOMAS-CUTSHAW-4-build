@@ -5,7 +5,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
-    background-color: lightgreen;
+    background-color: lightgray;
     gap: 0.5rem;
     margin: 1rem;
     padding: 0.5rem;
@@ -19,21 +19,21 @@ body {
 @media screen and (min-width: 640px) {
     body {
         grid-template-columns: 0.25fr 1fr;
-        background-color: lightblue;
+        background-color: white;
         font-size: 0.8rem;
     }
 }
 @media screen and (min-width: 768px) {
     body {
         grid-template-columns: 0.25fr 1fr;
-        background-color: lightpink;
+        background-color: lightgray;
         font-size: 1rem;
     }
 }
 @media screen and (min-width: 1024px) {
     body {
         grid-template-columns: 0.25fr 1fr auto;
-        background-color: lightyellow;
+        background-color: white;
         font-size: 1rem;
     }
 }
@@ -70,7 +70,7 @@ nav ul{
 }
 nav a{
   text-decoration: none;
-  background-color: grey;
+  background-color: darkblue;
   padding: 1rem 2rem;
   color: white;
   font-size: 1.5em;
@@ -84,6 +84,10 @@ main{
 }
 main ol{
     padding-left: 1rem;
+}
+main h2{
+    color: darkblue;
+    padding: 0.5rem;
 }
 aside{
   grid-column-start: 1;
@@ -100,14 +104,19 @@ aside{
 .card-row{
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   background-color: darkblue;
   padding: 1rem;
   gap: 1rem;
 }
 .card-row > section{
-    flex: 1;
+    flex: 1 0 200px;
     background-color: lightcyan;
     padding: 1rem;
+}
+.card-row img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
